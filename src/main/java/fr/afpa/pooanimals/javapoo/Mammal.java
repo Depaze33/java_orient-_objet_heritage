@@ -6,12 +6,12 @@ public class Mammal extends Animal {
     private String furColor;
 
     // Constructeur heritier de la classe mère
-    public Mammal(String furColor) {
-        super( species, ecosystem){
+    public Mammal(String species, String ecosystem, String furColor) {
+        super( species, ecosystem);
 
         this.furColor = furColor;
     
-        }
+        
     }
     //Getter
     public String getFurColor() {
@@ -22,5 +22,13 @@ public class Mammal extends Animal {
         this.furColor= furColor;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Animal { "
+        +super.toString()
+                + "\nCouleur de la fourrure" + getFurColor()
+                + '}';
+    }
+
+
 }

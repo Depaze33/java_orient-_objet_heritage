@@ -2,8 +2,8 @@ package fr.afpa.pooanimals.javapoo;
 
 abstract public class Animal {
     // declaration des attributs
-    private String species;
-    private String ecosystem;
+    public String species;
+    public  String ecosystem;
 
     // Declaration du constructeur
     public Animal(String species, String ecosystem) {
@@ -27,7 +27,7 @@ abstract public class Animal {
         this.ecosystem = ecosystem;
     }
 
-    
+    @Override
         public String toString() {
             return "Animal { "
                     + "\n Espèce" + getSpecies()
