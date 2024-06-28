@@ -27,4 +27,12 @@ abstract public class Animal {
         this.ecosystem = ecosystem;
     }
 
+    
+        public String toString() {
+            return "Animal { "
+                    + "\n Espèce" + getSpecies()
+                    + "\n Lieu de vie " + getEcosystem()
+                    + '}';
+        }
+
 }
