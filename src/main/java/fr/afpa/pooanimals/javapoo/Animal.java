@@ -1,12 +1,12 @@
 package fr.afpa.pooanimals.javapoo;
 
-abstract public class Animal {
+public abstract class Animal {
     // declaration des attributs
     public String species;
     public  String ecosystem;
 
     // Declaration du constructeur
-    public Animal(String species, String ecosystem) {
+protected Animal(String species, String ecosystem) {
         this.species = species;
         this.ecosystem = ecosystem;
     }
@@ -30,9 +30,10 @@ abstract public class Animal {
     @Override
         public String toString() {
             return "Animal { "
-                    + "\n Espèce" + getSpecies()
-                    + "\n Lieu de vie " + getEcosystem()
-                    + '}';
+                    + "\n Espèce " + getSpecies()
+                    + "\n Lieu de vie " + getEcosystem();
         }
+
+        public abstract void displayLocomotionType();
 
 }

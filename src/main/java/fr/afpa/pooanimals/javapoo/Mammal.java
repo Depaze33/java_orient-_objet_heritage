@@ -24,10 +24,14 @@ public class Mammal extends Animal {
 
     @Override
     public String toString() {
-        return "Animal { "
-        +super.toString()
-                + "\nCouleur de la fourrure" + getFurColor()
+        return super.toString()
+                + "\nCouleur de la fourrure " + getFurColor()
                 + '}';
+    }
+    @Override
+    public void displayLocomotionType() {
+        System.out.println("Le mode de locomotion est la marche ou la course");
+        
     }
 
 

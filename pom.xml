@@ -9,7 +9,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.release>21</maven.compiler.release>
+		<maven.compiler.release>18</maven.compiler.release>
 	</properties>
 
 	<build>
@@ -18,7 +18,7 @@
 				version 3.0.0 (https://maven.apache.org/ref/3-LATEST/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging) but version 3.8 featured 2.12.4 -->
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.22.2</version>
+				<version>3.3.1</version>
 			</plugin>
 			<!-- We require a recent version of this plugin because the maven.compiler.release property is understood only 
 				since 3.6 (see maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html#release), whereas by default Maven LATEST (3.9) features 

@@ -22,10 +22,14 @@ public class Fish extends Animal {
 
     @Override
     public String toString() {
-        return "Animal { "
-                + super.toString()
-                + "\n Eau préferé" + getPreffereWaterDepth()
+        return  super.toString()
+                + "\n Eau préferé " + getPreffereWaterDepth()
                 + '}';
+    }
+    @Override
+    public void displayLocomotionType() {
+        System.out.println("Le mode de locomotion est la nage");
+        
     }
 
 }
